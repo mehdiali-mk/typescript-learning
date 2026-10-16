@@ -1,0 +1,16 @@
+"use strict";
+let movieTitle = "3 Idiots";
+movieTitle = "Arrival";
+// movieTitle = 786;
+let age = 20;
+age = 22.55;
+movieTitle = 786;
+age = "Happy";
+console.log(movieTitle);
+console.log(age);
+// let ratings = 5;
+// let ratings = true;
+// ratings = "50";
+// let anyData: any = "abc";
+// anyData = true;
+// anyData = 123;
