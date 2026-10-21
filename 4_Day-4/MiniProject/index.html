@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Project — Todo App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="app-card">
+      <header class="app-header">
+        <h1>Task Flow</h1>
+        <p>Stay organized, focused, and get things done.</p>
+      </header>
+
+      <form action="" id="todoform">
+        <input
+          type="text"
+          name="todoInput"
+          id="todoInput"
+          placeholder="Enter todo!"
+          autocomplete="off"
+          required
+        />
+        <button type="submit" id="addButton">Add</button>
+      </form>
+
+      <!-- Filter Tabs -->
+      <div class="filter-bar">
+        <button type="button" class="filter-btn active" data-filter="all">
+          All
+        </button>
+        <button type="button" class="filter-btn" data-filter="active">
+          Active
+        </button>
+        <button type="button" class="filter-btn" data-filter="completed">
+          Completed
+        </button>
+      </div>
+
+      <div class="list-container">
+        <ul id="todoList"></ul>
+      </div>
+
+      <!-- Status & Bulk Action Footer -->
+      <footer class="app-footer">
+        <span id="taskCount">0 items left</span>
+        <button type="button" id="clearCompletedBtn">Clear Completed</button>
+      </footer>
+    </main>
+
+    <script type="module" src="./dist/index.js"></script>
+  </body>
+</html>
